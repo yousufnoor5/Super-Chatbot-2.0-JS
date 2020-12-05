@@ -1,7 +1,7 @@
 # Super-Chatbot-2.0-JS
 Chatbot created with HTML, CSS, JS and PHP.
 
-It is the Version 2 of my Super Chatbot, now It can fetch information, videos, news, cricket scores from internet.<br><br>
+It is the Version 2 of my Super Chatbot, now It can fetch information, videos, news,images, cricket scores from internet.<br><br>
 
 FEATURES :<br>
 ✅ Fetch Information from the internet. For example if you ask "What is the age of Bill Gates", it will goto the google and find relevent data and then give it to you.<br>
