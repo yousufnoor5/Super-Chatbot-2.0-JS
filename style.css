@@ -1,0 +1,269 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #BA68C8, #9C27B0);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.msgbox {
+    display: inline-block;
+    flex-direction: column;
+    position: relative;
+    width: 380px;
+    height: 550px;
+    background-color: white;
+    border-radius: 15px;
+    -ms-overflow-style: none;
+}
+
+.chat::-webkit-scrollbar {
+    display: none;
+}
+
+.chat {
+    padding: 20px;
+    height: 76%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    width: 90%;
+}
+
+.mymsg {
+    float: right;
+    margin-bottom: 13px;
+    background-image: linear-gradient(to right, #1E88E5, #42A5F5);
+    /* background-image: linear-gradient(to right, #4CAF50, #00C853 ); */
+    width: 70%;
+    /* text-align: center; */
+    padding: 12px;
+    color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.botmsg {
+    float: left;
+    margin-top: 13px;
+    margin-right: 10px;
+    background-image: linear-gradient(to right, #F1F8E9, #DCEDC8);
+    padding: 12px;
+    color: black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#typemsg {
+    padding: 12px 22px;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: white;
+}
+
+.input {
+    display: block;
+    text-align: right;
+    position: absolute;
+    background-color: white;
+    width: auto;
+    bottom: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#btn {
+    text-decoration: none;
+    background-color: #1E88E5;
+    /* background-color: #4CAF50; */
+    border: none;
+    outline: none;
+    height: 60.5px;
+    width: 60px;
+    font-size: 13px;
+    padding: 6px;
+    /* margin-bottom:10px; */
+    cursor: pointer;
+    color: white;
+    border-bottom-right-radius: 15px;
+}
+
+.themebtns {
+    /* float: left; */
+    /* right: 1vw; */
+    width: 30px;
+    padding: 10px;
+    position: absolute;
+    z-index: 10;
+}
+
+#darkmodebtn {
+    /* float: right; */
+    text-decoration: none;
+    background-color: black;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+.head {
+    position: sticky;
+    background-color: white;
+    top: 0;
+    height: 42px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.head h1 {
+    color: black;
+    font-size: 16px;
+    display: inline-block;
+    margin: 9px;
+    text-align: center;
+}
+
+.head img {
+    float: left;
+    width: 33px;
+    height: 35px;
+    margin: 5px;
+}
+
+.head label {
+    float: right;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-left: 5px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.head i {
+    margin-top: 16px;
+    float: right;
+    color: green;
+    font-size: 10px;
+}
+
+.head {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.orangeTheme {
+    background-image: linear-gradient(to right, #FF5722, #F4511E);
+}
+
+.blueTheme {
+    background-image: linear-gradient(to right, #1E88E5, #42A5F5);
+    font-weight: 100;
+}
+
+.redTheme {
+    background-image: linear-gradient(to right, #F44336, #D32F2F);
+}
+
+.greenTheme {
+    background-image: linear-gradient(to right, #4CAF50, #00C853);
+}
+
+@media only screen and (max-width: 450px) {
+    .msgbox {
+        width: 330px;
+        height: 550px;
+    }
+    #typemsg {
+        width: 63.91%;
+    }
+    .head img {
+        width: 23px;
+        height: 25px;
+        margin: 5px;
+    }
+    .head h1 {
+        color: black;
+        font-size: 12px;
+        margin: 9px;
+        text-align: center;
+    }
+    .head label {
+        font-size: 10px;
+    }
+    .head i {
+        font-size: 8px;
+    }
+    .mymsg {
+        padding: 10px;
+        padding-left: 10px;
+    }
+    .botmsg {
+        padding: 10px;
+        padding-left: 10px;
+    }
+    .input {
+        width: 100%;
+    }
+    #btn {
+        width: 48px;
+    }
+    #darkmodebtn {
+        display: none;
+    }
+}
+
+
+/* EXTRA CSS FOR SOME WEBSCRAP THINGS */
+
+.cricketscore {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 5px;
+}
+
+.news {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 5px;
+}
+
+.video {
+    /* border: 2px solid white; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    text-align: center;
+}
